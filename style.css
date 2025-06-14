@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to top, #f6f1eb, #e3d9ce);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: rgba(239, 248, 238, 0.9);
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #7b4b27;
+  margin-bottom: 1.5rem;
+}
+
+.tea-selector {
+  margin-bottom: 1.5rem;
+}
+
+.tea-selector select {
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  background-color: #fff5e5;
+  color: #5a4636;
+  border: 2px solid #d4af7f;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tea-selector select:hover {
+  background-color: #fff0d0;
+}
+
+.timer-display {
+  font-size: 3rem;
+  color: #3b2c23;
+  margin: 1.5rem 0;
+  font-weight: bold;
+}
+
+.controls button {
+  background-color: #d4af7f;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #b18d68;
+}
+
+.steam {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.steam-line {
+  width: 5px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 20px;
+  filter: blur(2px);
+}

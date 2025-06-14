@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WarmSip - Tea Timer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🍵 WarmSip</h1>
+
+    <div class="tea-selector">
+      <label for="tea">Choose Your Tea:</label>
+      <select id="tea">
+        <option value="180">Green Tea - 3 min</option>
+        <option value="240">Black Tea - 4 min</option>
+        <option value="300">Herbal Tea - 5 min</option>
+      </select>
+    </div>
+
+    <div class="timer-display" id="timer">03:00</div>
+
+    <div class="controls">
+      <button id="start">▶ Start</button>
+      <button id="pause">⏸ Pause</button>
+      <button id="reset">⟳ Reset</button>
+    </div>
+
+    <div class="steam">
+      <div class="steam-line"></div>
+      <div class="steam-line"></div>
+      <div class="steam-line"></div>
+    </div>
+  </div>
+
+  <audio id="alarm-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-bell-notification-933.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
